@@ -1,0 +1,179 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Trebuchet MS';
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jumbotron {
+  border-top: 30px;
+  border-bottom: 30px;
+}
+
+/* Page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.h3 {
+  margin-top: 10px;
+}
+
+/* Form */
+#bookmarkForm {
+  margin-top: 23px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  padding: 6px 32px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  box-shadow: 0 1px 0 0;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+  box-shadow: 0 5px 0 0 #15b358;
+}
+
+.btn-green:hover, .btn-green:focus {
+  background-color: #48e68b;
+  color: #fff;
+}
+
+.btn-red,.btn-red:focus {
+  background-color: #e74c3c;
+  box-shadow: 0 5px 0 0 #CE3323;
+}
+
+.btn-red:hover {
+  color: #fff;
+  background-color: #FF6656;
+}
+
+.btn-purple, .btn-purple:focus {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+
+.btn-purple:hover {
+  background-color: #B573D0;
+  color: #fff;
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Form styling */
+label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.form-group input:focus + label {
+  color: #16abf0;
+}
+
+.form-group input:focus + label {
+  color: #183568;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input {
+  font-size: 15pt;
+  height: 3em;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.form-group label {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  font-size: 15pt;
+  z-index: 1;
+  transform-origin: 0 0em;
+  transition: transform 160ms, color 200ms;
+  transform: scale(1, 1) rotateY(0);
+  color: #999;
+}
+
+.form-group-float label {
+  transform: scale(.55, .55) rotateY(0);
+  top: 5px;
+  font-size: 1.7em;
+}
+
+.form-group-float input {
+  line-height: 3.4em;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
